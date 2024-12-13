@@ -1,0 +1,80 @@
+.nav-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: aqua;
+  height: 50px;
+  padding: 10px;
+  width: 100%;
+}
+
+.search-ip {
+  width: 350px;
+  height: 25px;
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  margin-right: 10%;
+}
+
+.btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-button {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+  }
+  .btn {
+    margin-bottom: 10px;
+  }
+  .nav-button.mob-size {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+    margin: 10px;
+  }
+
+  .search-ip {
+    width: 200px;
+    margin-bottom: 10px;
+  }
+}
